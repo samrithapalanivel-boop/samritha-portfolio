@@ -1,0 +1,417 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Samritha P | AI & Python Developer</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f9fc;
+    color: #243047;
+    line-height: 1.7;
+}
+
+header {
+    background: white;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 2px 12px #0000000d;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+nav a {
+    text-decoration: none;
+    color: #243047;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #2563eb;
+}
+
+section {
+    padding: 75px 8%;
+}
+
+.hero {
+    min-height: 480px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.hero h1 {
+    font-size: 46px;
+    color: #172554;
+}
+
+.hero h2 {
+    color: #2563eb;
+    margin: 10px 0;
+}
+
+.hero p {
+    max-width: 600px;
+    color: #64748b;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 12px 24px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+.profile {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    border: 6px solid #dbeafe;
+    object-fit: cover;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 30px;
+    color: #172554;
+    margin-bottom: 35px;
+}
+
+.about {
+    background: white;
+    text-align: center;
+}
+
+.about p {
+    max-width: 850px;
+    margin: auto;
+    color: #64748b;
+}
+
+.skills, .projects, .certificates {
+    text-align: center;
+}
+
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.skill {
+    background: white;
+    padding: 15px 28px;
+    border-radius: 8px;
+    box-shadow: 0 3px 12px #0000000c;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 22px;
+}
+
+.project-card {
+    background: white;
+    padding: 25px;
+    text-align: left;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px #0000000d;
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: #2563eb;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    color: #64748b;
+    font-size: 14px;
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    margin-right: 12px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.certificate-card {
+    background: white;
+    padding: 20px;
+    margin: 12px auto;
+    max-width: 650px;
+    border-radius: 8px;
+}
+
+.contact {
+    background: white;
+    text-align: center;
+}
+
+.contact a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #172554;
+    color: white;
+}
+
+@media(max-width: 750px) {
+    header {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding-top: 50px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 55px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">Samritha P.</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <p>HELLO, WELCOME TO MY PORTFOLIO</p>
+
+        <h1>Hi, I'm Samritha P</h1>
+
+        <h2>Junior Python Developer</h2>
+
+        <p>
+            Aspiring AI and Machine Learning professional
+            passionate about Python development, intelligent
+            applications and innovative technology solutions.
+        </p>
+
+        <a class="btn" href="#projects">Explore My Projects</a>
+        <a class="btn" href="#contact">Contact Me</a>
+    </div>
+
+    <img src="profile.jpg" alt="Samritha Profile Photo" class="profile">
+</section>
+
+<section class="about" id="about">
+    <h2 class="section-title">About Me</h2>
+
+    <p>
+        I am Samritha P, an aspiring Python Developer and
+        AI/ML enthusiast from Tamil Nadu, India.
+        I have knowledge of Python, C, HTML, DBMS and
+        Machine Learning. I enjoy developing practical
+        technology solutions and continuously improving
+        my technical skills through projects and learning.
+    </p>
+
+    <br>
+    <p><b>Education:</b> Vivekanandha College of Engineering for Women</p>
+    <p><b>Location:</b> Namakkal, Tamil Nadu, India</p>
+    <p><b>Career Interest:</b> Python Development, AI and ML</p>
+</section>
+
+<section class="skills" id="skills">
+    <h2 class="section-title">My Technical Skills</h2>
+
+    <div class="skill-list">
+        <div class="skill">Python</div>
+        <div class="skill">C Programming</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">DBMS</div>
+        <div class="skill">Machine Learning</div>
+        <div class="skill">Deep Learning</div>
+        <div class="skill">SQL</div>
+        <div class="skill">AI & GenAI</div>
+        <div class="skill">GitHub</div>
+    </div>
+</section>
+
+<section class="projects" id="projects">
+    <h2 class="section-title">My Projects</h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>Road Damage Forecasting</h3>
+            <p>
+                An ML-based project focused on road damage
+                detection, severity analysis and forecasting
+                to support preventive road maintenance.
+            </p>
+            <p><b>Technologies:</b> CNN, LSTM, Random Forest</p>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live Demo</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Fake News Detection</h3>
+            <p>
+                A machine learning and NLP-based project
+                designed to classify news content and
+                identify potentially misleading information.
+            </p>
+            <p><b>Technologies:</b> Python, NLP, ML</p>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live Demo</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Screen Time Prediction</h3>
+            <p>
+                A deep learning project that analyzes
+                screen time patterns and predicts future
+                screen usage.
+            </p>
+            <p><b>Technologies:</b> Python, LSTM</p>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live Demo</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Other ML Projects</h3>
+            <p>
+                A collection of additional machine learning
+                experiments, practical applications and
+                future AI projects.
+            </p>
+            <p><b>Technologies:</b> Python, ML, Data Analysis</p>
+            <a href="#" target="_blank">GitHub</a>
+            <a href="#" target="_blank">Live Demo</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="certificates" id="certificates">
+    <h2 class="section-title">Certifications & Learning</h2>
+
+    <div class="certificate-card">
+        <h3>Google Skills – Machine Learning Operations</h3>
+        <p>Machine Learning and Model Evaluation learning.</p>
+    </div>
+
+    <div class="certificate-card">
+        <h3>MongoDB Learning</h3>
+        <p>Completed MongoDB course lessons.</p>
+    </div>
+
+    <div class="certificate-card">
+        <h3>Continuous Technical Learning</h3>
+        <p>Exploring AI, Python, Cloud Computing and GenAI.</p>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">Contact Me</h2>
+
+    <p>Let's connect and explore opportunities!</p>
+
+    <p>Email:
+        <a href="mailto:samrithapalanivel@gmail.com">
+        samrithapalanivel@gmail.com</a>
+    </p>
+
+    <p>GitHub:
+        <a href="https://github.com/" target="_blank">
+        Visit GitHub</a>
+    </p>
+
+    <p>LinkedIn:
+        <a href="https://www.linkedin.com/" target="_blank">
+        Visit LinkedIn</a>
+    </p>
+
+    <a class="btn" href="mailto:samrithapalanivel@gmail.com">
+        Send Email
+    </a>
+</section>
+
+<footer>
+    <p>© 2026 Samritha P. All Rights Reserved.</p>
+    <p>Designed with passion for Technology and Innovation.</p>
+</footer>
+
+</body>
+</html>
+<a class="btn" href="Samritha_Palanivel_Resume_2Pages.pdf" download>
+Download Resume
+</a>
